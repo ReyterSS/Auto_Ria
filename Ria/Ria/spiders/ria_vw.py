@@ -62,7 +62,7 @@ class RiaVwSpider(CrawlSpider):
             'Розгін до 100 км': self.extract_with_xpath(response,
                     '//*[(text()="Час розгону до 100 км/год")]//parent::label/parent::li/*[@class="value"]//text()',
                     '//*[(text()="Час розгону до 100 км/год")]//following-sibling::span//text()'),
-            'Посилання': response.url
+            'Посилання':  response.url
         }
 
         yield car_data
